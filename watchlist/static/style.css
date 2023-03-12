@@ -45,6 +45,21 @@ footer {
     display: block;
     margin: 0 auto;
     height: 100px;
+    animation: move 20s linear infinite normal;
+}
+
+.totoro:hover {
+    animation-play-state:paused;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(200px, 0);
+    }
+    100% {
+        transform: translate(-200px, 0);
+
+    }
 }
 
 /* 覆盖某些浏览器对 input 元素定义的字体 */
